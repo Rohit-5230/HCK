@@ -4,20 +4,26 @@ h2 {
   color: white;
   text-align: :center;
 }
+h3 {
+  text-align: left;
+  padding: 20px 0;  
+  color: white;
+  text-align: :center;
+}
 
 li {
   font-size: 20px;  
+  color: white;
   line-height: 2;
   letter-spacing: 1px;
   padding-bottom: 10px;
 }
 
 div {
-  background: tomato;
-  width: 500px;
-  height: 500px;
+  width: 650px;
+  height: 600px;
   padding: 5px;
-  align-self: :left;
+  align-self: left;
 }
 
 h1 {
@@ -46,7 +52,7 @@ p {
   cursor: pointer;
 }
 button {
-    background-color: #4CAF50; /* Green */
+    background-color: tomato; /* Green */
     border: none;
     color: white;
     padding: 10px 32px;

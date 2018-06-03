@@ -3,6 +3,9 @@ var Coins = { "BTC": "", "LTC": "", "XRP": "", "ETH": "", "DASH": "" ,"BCH":"","
 const CoinName = Object.keys(Coins);
 var Myportfolio = { "walletValue": 10000000, "TotalValue": 0 };
 
+document.getElementById("portfolioValue").textContent = "Portfolio Value = " + JSON.stringify(Myportfolio.TotalValue);
+document.getElementById("WalletBalance").textContent = "Wallet Balance = " + JSON.stringify(Myportfolio.walletValue);
+
 function getCoin(name) {
 	function reqListener() {
 		Result = JSON.parse(this.responseText);
@@ -38,7 +41,7 @@ function Buy() {
 		li.setAttribute('id', name);
 		li.appendChild(document.createTextNode("Bought " + " " + Myportfolio[name].numofcoins + " " + name + " for INR " + Myportfolio[name].value));
 		ul.appendChild(li);
-		document.getElementById("portfolioValue").textContent = "Total Portfolio Value = " + JSON.stringify(Myportfolio.TotalValue);
+		document.getElementById("portfolioValue").textContent = "Portfolio Value = " + JSON.stringify(Myportfolio.TotalValue);
 		document.getElementById("WalletBalance").textContent = "Wallet Balance = " + JSON.stringify(Myportfolio.walletValue);
 	}
 }
@@ -58,7 +61,7 @@ function Sell() {
 		li.setAttribute('id', name);
 		li.appendChild(document.createTextNode("Sold " + " " + Myportfolio[name].numofcoins + " " + name + " for INR " + Myportfolio[name].value));
 		ul.appendChild(li);
-		document.getElementById("portfolioValue").textContent = "Total Portfolio Value = " + JSON.stringify(Myportfolio.TotalValue);
+		document.getElementById("portfolioValue").textContent = "Portfolio Value = " + JSON.stringify(Myportfolio.TotalValue);
 		document.getElementById("WalletBalance").textContent = "Wallet Balance = " + JSON.stringify(Myportfolio.walletValue);
 	}
 }
