@@ -1,5 +1,5 @@
 var Result;
-var Coins = { "BTC": "", "LTC": "", "XRP": "", "ETH": "", "DASH": "" };
+var Coins = { "BTC": "", "LTC": "", "XRP": "", "ETH": "", "DASH": "" ,"BCH":"","ENJ":""};
 const CoinName = Object.keys(Coins);
 var Myportfolio = { "walletValue": 10000000, "TotalValue": 0 };
 

@@ -7,6 +7,8 @@
 </head>
 
 <body>
+	<table>
+	<td>
 	<div id="hotCoins">
 		<h2> Hot Cryptocurrencies </h2>
 		<ol id="HotCoin">
@@ -15,13 +17,17 @@
 			<li id="LTC"></li>
 			<li id="XRP"></li>
 			<li id="DASH"></li>
+			<li id="BCH"></li>
+			<li id="ENJ"></li>
 		</ol>
 		<input type="text" id="bcointype" placeholder="Select a Coin to Buy">
 		<input type="text" id="bcoinnum" placeholder="How Much">
 		<button type="button" onclick="Buy()">Buy</button>
 	</div>
+</td>
 	<br>
 	<br>
+	<td>
 	<div id="UserActivity">
 		<h2> My Portfolio </h2>
 		<h3 id="WalletBalance"> Wallet Balance </h3>
@@ -32,6 +38,8 @@
 		<input type="text" id="scoinnum" placeholder="How Much">
 		<button type="button" onclick="Sell()">Sell</button>
 	</div>
+</td>
+</table>
 	<script src="index.js"></script>
 </body>
 
