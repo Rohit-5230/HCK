@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>VIRTUAL CRPTO EXCHANGE</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="hotCoins">
+		<h2> Hot Cryptocurrencies </h2>
+		<ol id="HotCoin">
+			<li id="BTC"></li>
+			<li id="ETH"></li>
+			<li id="LTC"></li>
+			<li id="XRP"></li>
+			<li id="DASH"></li>
+		</ol>
+		<input type="text" id="bcointype" placeholder="Select a Coin to Buy">
+		<input type="text" id="bcoinnum" placeholder="How Much">
+		<button type="button" onclick="Buy()">Buy</button>
+	</div>
+	<br>
+	<br>
+	<div id="UserActivity">
+		<h2> My Portfolio </h2>
+		<h3 id="WalletBalance"> Wallet Balance </h3>
+		<h3 id="portfolioValue"> Portfolio Value </h3>
+		<ol id="portfolio">
+		</ol>
+		<input type="text" id="scointype" placeholder="Select a Coin to Sell">
+		<input type="text" id="scoinnum" placeholder="How Much">
+		<button type="button" onclick="Sell()">Sell</button>
+	</div>
+	<script src="index.js"></script>
+</body>
+
+</html>
